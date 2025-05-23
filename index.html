@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JTG-Landing Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Header Section -->
+      <header class="header">
+        <div class="header-content">
+          <div class="navigation">
+            <nav class="main-nav" id="mainNav">
+              <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="logo">
+              <img src="/images/logo.png" alt="Logo" />
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="social-icon">
+              <img
+                src="https://static.codia.ai/custom_image/2025-05-14/063042/social-icon-1.svg"
+                alt="Social Icon"
+              />
+            </a>
+            <a href="#" class="social-icon">
+              <img
+                src="https://static.codia.ai/custom_image/2025-05-14/063042/social-icon-2.svg"
+                alt="Social Icon"
+              />
+            </a>
+            <a href="#" class="social-icon">
+              <img
+                src="https://static.codia.ai/custom_image/2025-05-14/063042/social-icon-3.svg"
+                alt="Social Icon"
+              />
+            </a>
+          </div>
+          <button
+            class="mobile-menu-toggle"
+            aria-label="Toggle menu"
+            id="menuToggle"
+            onclick="hamburger()"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>The best products start with Figma</h1>
+            <p>
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </p>
+            <a href="#" class="btn btn-primary">Try For Free</a>
+          </div>
+        </div>
+        <div class="triangle-design"></div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features" id="features">
+        <div class="container">
+          <div class="section-header">
+            <h2>Features</h2>
+            <p>
+              Most calendars are designed for teams.<br />Slate is designed for
+              freelancers
+            </p>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <img
+                  src="https://static.codia.ai/custom_image/2025-05-14/063042/feature-icon-1.svg"
+                  alt="OpenType features"
+                />
+              </div>
+              <h3>OpenType features<br />Variable fonts</h3>
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <img
+                  src="https://static.codia.ai/custom_image/2025-05-14/063042/feature-icon-2.svg"
+                  alt="Design with real data"
+                />
+              </div>
+              <h3>Design with real data</h3>
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <img
+                  src="https://static.codia.ai/custom_image/2025-05-14/063042/feature-icon-3.svg"
+                  alt="Fastest way to take action"
+                />
+              </div>
+              <h3>Fastest way to<br />take action</h3>
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Section -->
+      <section class="video-section">
+        <div class="container">
+          <div class="video-container">
+            <video id="video" src="/videos/video.mp4"></video>
+            <button id="video-control" class="video-thumbnail">
+              <img src="/images/play button.png" alt="Play" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Organize Section -->
+      <section class="organize-section">
+        <div class="container">
+          <div class="organize-content">
+            <div class="organize-text">
+              <h2>Fastest way to<br />organize</h2>
+              <p>
+                Most calendars are designed for teams.<br />Slate is designed
+                for freelancers
+              </p>
+              <a href="#" class="btn btn-primary">Try For Free</a>
+            </div>
+            <div class="organize-image">
+              <img src="images/mackbook.png" alt="Product Screenshot" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- App Showcase Section -->
+      <section class="app-showcase">
+        <div class="container">
+          <div class="app-showcase-content">
+            <div class="device-mockup">
+              <img src="images/prototyping.png" alt="" />
+            </div>
+            <div class="app-info">
+              <span class="subtitle">At your fingertips</span>
+              <h2>Lightning fast<br />prototyping</h2>
+              <div class="newsletter-form">
+                <h3>Subscribe to our Newsletter</h3>
+                <p>Available exclusivery on Figmaland</p>
+                <form>
+                  <input type="email" placeholder="Your Email" required />
+                  <button type="submit" class="btn btn-primary">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Partners Section -->
+      <section class="partners-section" id="partners">
+        <div class="container">
+          <div class="section-header">
+            <h2>Partners</h2>
+            <p>
+              Most calendars are designed for teams.<br />Slate is designed for
+              freelancers
+            </p>
+          </div>
+          <div class="partners-grid">
+            <div class="partner-card">
+              <span>Client Name</span>
+              <div class="partner-logo">
+                <img src="/images/google.png" alt="Partner Logo" />
+              </div>
+            </div>
+            <div class="partner-card">
+              <span>Client Name</span>
+              <div class="partner-logo">
+                <img src="/images/amazon.png" alt="Partner Logo" />
+              </div>
+            </div>
+            <div class="partner-card">
+              <span>Client Name</span>
+              <div class="partner-logo">
+                <img src="/images/microsoft.png" alt="Partner Logo" />
+              </div>
+            </div>
+            <div class="partner-card">
+              <span>Client Name</span>
+              <div class="partner-logo">
+                <img src="/images/uber.png" alt="Partner Logo" />
+              </div>
+            </div>
+            <div class="partner-card">
+              <span>Client Name</span>
+              <div class="partner-logo">
+                <img src="/images/dropbox.png" alt="Partner Logo" />
+              </div>
+            </div>
+            <div class="partner-card">
+              <span>Client Name</span>
+              <div class="partner-logo">
+                <img src="/images/google.png" alt="Partner Logo" />
+              </div>
+            </div>
+            <div class="partner-card">
+              <span>Client Name</span>
+              <div class="partner-logo">
+                <img src="/images/uber.png" alt="Partner Logo" />
+              </div>
+            </div>
+            <div class="partner-card">
+              <span>Client Name</span>
+              <div class="partner-logo">
+                <img src="/images/amazon.png" alt="Partner Logo" />
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary">Try For Free</a>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Testimonials</h2>
+          </div>
+          <div class="testimonial-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="testimonial-slide swiper-slide">
+                <div class="testimonial-logo">
+                  <img
+                    src="https://static.codia.ai/custom_image/2025-05-14/063042/testimonial-logo.svg"
+                    alt="Company Logo"
+                  />
+                </div>
+                <p class="testimonial-text">
+                  Most calendars are designed for teams. Slate is designed for
+                  freelancers who want a simple way to plan their schedule.
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="https://static.codia.ai/custom_image/2025-05-14/063042/testimonial-avatar.png"
+                    alt="Author"
+                    class="author-avatar"
+                  />
+                  <div class="author-info">
+                    <h4>John Doe</h4>
+                    <span>UI designer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide swiper-slide">
+                <div class="testimonial-logo">
+                  <img
+                    src="https://static.codia.ai/custom_image/2025-05-14/063042/testimonial-logo.svg"
+                    alt="Company Logo"
+                  />
+                </div>
+                <p class="testimonial-text">
+                  Most calendars are designed for teams. Slate is designed for
+                  freelancers who want a simple way to plan their schedule.
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="https://static.codia.ai/custom_image/2025-05-14/063042/testimonial-avatar.png"
+                    alt="Author"
+                    class="author-avatar"
+                  />
+                  <div class="author-info">
+                    <h4>John Doe</h4>
+                    <span>UI designer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide swiper-slide">
+                <div class="testimonial-logo">
+                  <img
+                    src="https://static.codia.ai/custom_image/2025-05-14/063042/testimonial-logo.svg"
+                    alt="Company Logo"
+                  />
+                </div>
+                <p class="testimonial-text">
+                  Most calendars are designed for teams. Slate is designed for
+                  freelancers who want a simple way to plan their schedule.
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="https://static.codia.ai/custom_image/2025-05-14/063042/testimonial-avatar.png"
+                    alt="Author"
+                    class="author-avatar"
+                  />
+                  <div class="author-info">
+                    <h4>John Doe</h4>
+                    <span>UI designer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section class="pricing-section" id="pricing">
+        <div class="container">
+          <div class="section-header light">
+            <h2>Pricing</h2>
+            <p>
+              Most calendars are designed for teams.<br />Slate is designed for
+              freelancers
+            </p>
+          </div>
+          <div class="pricing-cards">
+            <div class="pricing-card">
+              <div class="pricing-header">
+                <h3>FREE</h3>
+                <p>Organize across all apps by hand</p>
+              </div>
+              <div class="pricing-price">
+                <div class="price">
+                  <span class="currency">$</span>
+                  <span class="amount">0</span>
+                </div>
+                <span class="period">Per Month</span>
+              </div>
+              <ul class="pricing-features">
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+              </ul>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+            <div class="pricing-card featured">
+              <div class="pricing-header">
+                <h3>STANDARD</h3>
+                <p>Organize across all apps by hand</p>
+              </div>
+              <div class="pricing-price">
+                <div class="price">
+                  <span class="currency">$</span>
+                  <span class="amount">10</span>
+                </div>
+                <span class="period">Per Month</span>
+              </div>
+              <ul class="pricing-features">
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+              </ul>
+              <a href="#" class="btn btn-light">Order Now</a>
+            </div>
+            <div class="pricing-card">
+              <div class="pricing-header">
+                <h3>BUSINESS</h3>
+                <p>Organize across all apps by hand</p>
+              </div>
+              <div class="pricing-price">
+                <div class="price">
+                  <span class="currency">$</span>
+                  <span class="amount">99</span>
+                </div>
+                <span class="period">Per Month</span>
+              </div>
+              <ul class="pricing-features">
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+                <li>Pricing Feature</li>
+              </ul>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2>Contact Us</h2>
+            <p>
+              Most calendars are designed for teams.<br />Slate is designed for
+              freelancers
+            </p>
+          </div>
+          <div class="contact-content">
+            <div class="contact-form">
+              <form id="contactForm">
+                <h3>Contact Us</h3>
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+            </div>
+            <!-- Modal -->
+            <div class="modal" id="successModal">
+              <div class="modal-content">
+                <button class="close-modal" onclick="closeModal()">×</button>
+                <p>Your query sent successfully</p>
+                <button class="btn btn-primary" onclick="closeModal()">
+                  Close
+                </button>
+              </div>
+            </div>
+            <div class="contact-info">
+              <div class="contact-details">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <img
+                      src="https://static.codia.ai/custom_image/2025-05-14/063042/contact-icon-1.svg"
+                      alt="Address"
+                    />
+                  </div>
+                  <p>
+                    6386 Spring St undefined Anchorage, Georgia 12473 United
+                    States
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <img
+                      src="https://static.codia.ai/custom_image/2025-05-14/063042/contact-icon-2.svg"
+                      alt="Phone"
+                    />
+                  </div>
+                  <p>(843) 555-0130</p>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <img
+                      src="https://static.codia.ai/custom_image/2025-05-14/063042/contact-icon-3.svg"
+                      alt="Email"
+                    />
+                  </div>
+                  <p>willie.jennings@example.com</p>
+                </div>
+              </div>
+              <div class="contact-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14010.760057309266!2d77.2226051642095!3d28.609074898779188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2db961be393%3A0xf6c7ef5ee6dd10ae!2sIndia%20Gate%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1747239710158!5m2!1sen!2sin"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="contact-social">
+                <a href="#" class="social-icon">
+                  <img
+                    src="https://static.codia.ai/custom_image/2025-05-14/063042/footer-social-1.svg"
+                    alt="Social"
+                  />
+                </a>
+                <a href="#" class="social-icon">
+                  <img
+                    src="https://static.codia.ai/custom_image/2025-05-14/063042/footer-social-2.svg"
+                    alt="Social"
+                  />
+                </a>
+                <a href="#" class="social-icon">
+                  <img
+                    src="https://static.codia.ai/custom_image/2025-05-14/063042/footer-social-3.svg"
+                    alt="Social"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-nav">
+              <div class="footer-column">
+                <h4>Pages</h4>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Partners</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4>Tomothy</h4>
+                <ul>
+                  <li><a href="#">Eleanor Edwards</a></li>
+                  <li><a href="#">Ted Robertson</a></li>
+                  <li><a href="#">Annette Russell</a></li>
+                  <li><a href="#">Jennie Mckinney</a></li>
+                  <li><a href="#">Gloria Richards</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4>Jane Black</h4>
+                <ul>
+                  <li><a href="#">Philip Jones</a></li>
+                  <li><a href="#">Product</a></li>
+                  <li><a href="#">Colleen Russell</a></li>
+                  <li><a href="#">Marvin Hawkins</a></li>
+                  <li><a href="#">Bruce Simmmons</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-contact">
+              <div class="footer-logo">
+                <img
+                  src="https://static.codia.ai/custom_image/2025-05-14/063042/footer-logo.svg"
+                  alt="Logo"
+                />
+                <span>7480 Mistwood Hollo</span>
+              </div>
+              <div class="footer-phone">
+                <div class="footer-icon">
+                  <img
+                    src="https://static.codia.ai/custom_image/2025-05-14/063042/footer-phone-icon.svg"
+                    alt="Phone"
+                  />
+                </div>
+                <span>(239) 555-0108</span>
+              </div>
+              <div class="footer-social">
+                <a href="#" class="social-icon">
+                  <img
+                    src="https://static.codia.ai/custom_image/2025-05-14/063042/footer-social-4.svg"
+                    alt="Social"
+                  />
+                </a>
+                <a href="#" class="social-icon">
+                  <img
+                    src="https://static.codia.ai/custom_image/2025-05-14/063042/footer-social-5.svg"
+                    alt="Social"
+                  />
+                </a>
+                <a href="#" class="social-icon">
+                  <img
+                    src="https://static.codia.ai/custom_image/2025-05-14/063042/footer-social-6.svg"
+                    alt="Social"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>
